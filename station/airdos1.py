@@ -14,7 +14,7 @@ import math
 time.sleep(10)	# delay for initialisation of the RS232/USB convertor
 
 def handle_data(data):
-	print data,
+	#print data,
 	datafname = '/home/odroid/station/data/' + str(time.strftime("%Y%m%d%H0000000")) + "_MUS-A1_meta" + ".csv"
 	if int(time.strftime('%Y')) >= 2016:
 	#if True:
