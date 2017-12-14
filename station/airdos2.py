@@ -33,6 +33,7 @@ port = '/dev/serial/by-id/usb-FTDI_FT232R_USB_UART_A9G7V59L-if00-port0'
 baud = 9600
 
 while True:
+	try:
 		serial_port = serial.Serial(port, baud, timeout=20)
 		while True:
 			reading = serial_port.readline().rstrip()
@@ -43,3 +44,7 @@ while True:
 				+ str(reading) 
 				+ str('\n')
 				)
+	except:
+		print "Exception"
+		time.sleep(5)
+
