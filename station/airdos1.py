@@ -26,7 +26,8 @@ def handle_data(data):
 # If you don't know the serial number, replace by /dev/ttyUSB0 or so
 
 # AIRDOS 1
-port = '/dev/serial/by-id/usb-FTDI_FT232R_USB_UART_A9GZB15L-if00-port0'
+#port = '/dev/serial/by-id/usb-FTDI_FT232R_USB_UART_A9GZB15L-if00-port0'
+port = '/dev/ttyS2'
 
 # AIRDOS 2
 #port = '/dev/serial/by-id/usb-FTDI_FT232R_USB_UART_A9G7V59L-if00-port0'
@@ -34,7 +35,7 @@ port = '/dev/serial/by-id/usb-FTDI_FT232R_USB_UART_A9GZB15L-if00-port0'
 baud = 9600
 
 while True:
-#	try:
+	try:
 		serial_port = serial.Serial(port, baud, timeout=20)
 
 #		cfg = 	config.Config(
@@ -69,6 +70,6 @@ while True:
 				+ str('\n')
 				)
 			 
-#	except:
-#		print "Exception"
-#		time.sleep(5)
+	except:
+		print "Exception"
+		time.sleep(5)
