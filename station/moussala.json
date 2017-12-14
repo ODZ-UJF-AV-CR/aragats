@@ -1,13 +1,13 @@
 {
 	"logging": [
 		{
-			"file_name": "/home/odroid/radio-observer.log",
+			"file_name": "/data/station/radio-observer.log",
 			"log_level": "debug",
 		},
 	],
 
 	"project": "meteo",
-	"project_home_folder": "/home/odroid/station/",
+	"project_home_folder": "/data/station/",
 	"storage_hostname": "space.astro.cz",
 	"storage_username": "moussala",
 	"storage_stationpath": "/storage/meteo/",
@@ -28,14 +28,14 @@
 					
 					"origin": "BEO-A0",      // name of detection station
 					
-					"metadata_path":  "/home/odroid/station/data/", // path to metadata output directory
+					"metadata_path":  "/data/station/data/", // path to metadata output directory
 
 					"children": [
 						{
 							"key":     "recorder",      // identification of method which will procces FFT output
 							"factory": "snapshot",      // method which creates continuous snapshots in eqidistant intervals
 
-							"output_dir": "/home/odroid/station/snapshots/",          // absolute path  to data output directory
+							"output_dir": "/data/station/snapshots/",          // absolute path  to data output directory
 							"output_type": "snap",       // data output idetifier (this string will be used in file name)
 							
 						},
@@ -43,7 +43,7 @@
 							"key":     "recorder",       // identification of meteor detector recording
 							"factory": "bolid",
 							
-							"output_dir": "/home/odroid/station/meteors/",          // absolute path  to data output directory
+							"output_dir": "/data/station/meteors/",          // absolute path  to data output directory
 							"output_type": "met",       // data output idetifier (this string will be used in file name)
 						},
 					],
