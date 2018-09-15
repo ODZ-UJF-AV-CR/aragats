@@ -9,7 +9,7 @@
 	"project": "meteo",
 	"project_home_folder": "/data/station/",
 	"storage_hostname": "space.astro.cz",
-	"storage_username": "moussala",
+	"storage_username": "aragats",
 	"storage_stationpath": "/storage/meteo/",
 	"storage_protocol": "ssh"
 
@@ -26,7 +26,7 @@
 					"factory": "waterfall", // waterfall data will be processed
 					
 					
-					"origin": "BEO-A0",      // name of detection station
+					"origin": "ARA-A0",      // name of detection station
 					
 					"metadata_path":  "/data/station/data/", // path to metadata output directory
 
