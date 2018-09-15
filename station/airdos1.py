@@ -14,7 +14,7 @@ import math
 time.sleep(10)	# delay for initialisation of the RS232/USB convertor
 
 def handle_data(data):
-	#print data,
+	print data,
 	datafname = '/data/station/data/' + str(time.strftime("%Y%m%d%H0000000")) + "_ARA-A3_meta" + ".csv"
 	if int(time.strftime('%Y')) >= 2016:
 	#if True:
@@ -27,7 +27,7 @@ def handle_data(data):
 
 # AIRDOS 1
 #port = '/dev/serial/by-id/usb-FTDI_FT232R_USB_UART_A9GZB15L-if00-port0'
-port = '/dev/serial/by-id/usb-FTDI_FT232R_USB_UART_A9GZB15L-if00-port0'
+port = '/dev/serial/by-id/usb-FTDI_FT232R_USB_UART_A9G7V59L-if00-port0'
 #port = '/dev/ttyUSB0'
 
 # AIRDOS 2

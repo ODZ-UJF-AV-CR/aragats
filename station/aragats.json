@@ -26,7 +26,7 @@
 					"factory": "waterfall", // waterfall data will be processed
 					
 					
-					"origin": "ARA-A0",      // name of detection station
+					"origin": "ARA-A3",      // name of detection station
 					
 					"metadata_path":  "/data/station/data/", // path to metadata output directory
 
