@@ -27,7 +27,8 @@ def handle_data(data):
 
 # AIRDOS 1
 #port = '/dev/serial/by-id/usb-FTDI_FT232R_USB_UART_A9GZB15L-if00-port0'
-port = '/dev/ttyS2'
+port = '/dev/serial/by-id/usb-FTDI_FT232R_USB_UART_A9GZB15L-if00-port0'
+#port = '/dev/ttyUSB0'
 
 # AIRDOS 2
 #port = '/dev/serial/by-id/usb-FTDI_FT232R_USB_UART_A9G7V59L-if00-port0'
