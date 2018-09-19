@@ -12,4 +12,7 @@ ${D}/station/airdos1.py >>${L}/airdos1.log 2>&1 &
 #${D}/station/airdos2.py >>${L}/airdos2.log 2>&1 &
 
 # This script is started by rc.local
-# su odroid -c "bash /home/odroid/station/start.sh" >/dev/null 2>>/home/odroid/start-error.log &
+#while [ ! /usr/bin/ntpstat ] ; do echo Waiting for NTP service to settle. >>/home/odroid/start.log ; sleep 5 ; done
+#sleep 10
+#su odroid -c "bash /home/odroid/station/start.sh" >>/home/odroid/start.log 2>>/home/odroid/start-error.log &
+
